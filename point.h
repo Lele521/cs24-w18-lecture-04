@@ -26,6 +26,8 @@
 #ifndef MAIN_SAVITCH_POINT_H 
 #define MAIN_SAVITCH_POINT_H         
 
+#include <iostream>
+using namespace std;
 
 class point {
     public:
@@ -45,7 +47,8 @@ class point {
 
 bool operator==(const point p1, const point p2);
 
+point operator+(const point p1, const point p2);
 
-
+ostream& operator<<(ostream& out, point p);
 
 #endif 

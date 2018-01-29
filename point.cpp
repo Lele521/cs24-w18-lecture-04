@@ -10,6 +10,16 @@ bool operator==(const point p1, const point p2){
 
 }
 
+point operator+(const point p1, const point p2){
+    double new_x = p1.get_x() + p2.get_x();
+    double new_y = p1.get_y() + p2.get_y();
+    return point(new_x, new_y);
+}
+
+ostream& operator<<(ostream& out, point p){
+    out<< "("<< p.get_x()<<", "<<p.get_y()<<")"<<endl;
+    return out;
+}
 
 point::point(double initial_x, double initial_y)
 {
