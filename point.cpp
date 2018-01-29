@@ -3,6 +3,14 @@
 
 #include "point.h"
 
+bool operator==(const point p1, const point p2){
+    
+    return p1.get_x() == p2.get_x() &&
+           p1.get_y() == p2.get_y();
+
+}
+
+
 point::point(double initial_x, double initial_y)
 {
     x = initial_x;   // Constructor sets the point to a given position.

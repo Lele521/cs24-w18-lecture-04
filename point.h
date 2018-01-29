@@ -43,4 +43,9 @@ class point {
 };
 
 
+bool operator==(const point p1, const point p2);
+
+
+
+
 #endif 
