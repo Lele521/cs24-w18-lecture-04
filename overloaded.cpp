@@ -4,7 +4,10 @@ using namespace std;
 
 int main(){
 	point p1(10, 20), p2(10,40);
-
+	cout <<"\nEnter the coordinates of p1 :";
+	cin >>p1;
+	cout <<"\nEnter the coordinates of p2 :";
+	cin >>p2;
 	point p3 = p1 + p2;// point p3 = operator+(p1,p2)
 	cout<<p1<<p2<<p3;
 	/*cout<<p2; //operator<<(cout, p2)

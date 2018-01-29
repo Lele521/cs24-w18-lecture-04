@@ -21,6 +21,14 @@ ostream& operator<<(ostream& out, point p){
     return out;
 }
 
+istream& operator>>(istream& ins, point& p){
+    /*double new_x, new_y;
+    ins>> new_x>> new_y;
+    p = point(new_x, new_y);*/
+    cin>>p.x>>p.y;
+    return ins;
+}
+
 point::point(double initial_x, double initial_y)
 {
     x = initial_x;   // Constructor sets the point to a given position.
