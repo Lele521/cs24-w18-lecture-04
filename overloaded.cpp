@@ -10,6 +10,7 @@ int main(){
 	cin >>p2;
 	point p3 = p1 + p2;// point p3 = operator+(p1,p2)
 	cout<<p1<<p2<<p3;
+	cout<<point(100,200);
 	
 	if (p1 == p2) { // operator==(p1, p2)
 		cout<<"Points are equal"<<endl;
